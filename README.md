@@ -1,3 +1,5 @@
+Just a simple chat-like application with limited functionality yet, built for training-learning purposes :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
