@@ -1,0 +1,127 @@
+.chat_conversation {
+  flex: 0.65;
+  max-width: 910px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_header {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat_headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat_headerRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.chat_body {
+  flex: 1;
+  background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: auto;
+}
+
+.chat_message {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 30px;
+  word-break: break-word;
+}
+
+/*  .chat_message::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid #fff;
+  border-right: 24px solid transparent;
+  border-top: 12px solid transparent;
+  border-bottom: 20px solid transparent;
+  left: 22px;
+  bottom: -20px; 
+} */
+
+.chat_name {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.chat_timestamp {
+  font-size: 8px;
+  margin-left: 5px;
+}
+
+.chat_sender {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+/* .chat_sender::before {
+  border-left-color: #dcf8c6;
+  transform: scaleX(-1);
+} */
+
+.chat_footer > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat_footer > form > input {
+  flex: 1;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.chat_footer > form > button {
+  display: none;
+}
+
+.chat_footer .MuiSvgIcon-root {
+  padding: 10px;
+  color: grey;
+}
+
+.chat_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+  height: 62px;
+  position: relative;
+}
+
+.chat_text_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.chat_text {
+  flex: 1;
+}
+
+.EmojiPickerReact.epr-main {
+  position: absolute !important;
+  top: -410px;
+  left: 8px;
+}
+.chat_footer > .MuiSvgIcon-root:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
